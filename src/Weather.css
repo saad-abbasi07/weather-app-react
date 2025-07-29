@@ -1,0 +1,73 @@
+/* Weather.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fcf8f3;
+  color: #2a2a2a;
+}
+
+.weather-box {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #f8d1d1, #ffffff);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.weather-box h2 {
+  margin-bottom: 20px;
+  color: #b22222;
+  letter-spacing: 1px;
+}
+
+.weather-box input {
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #b22222;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 15px;
+  background-color: #fff4f4;
+}
+
+.weather-box button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #8b0000;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.weather-box button:hover {
+  background-color: #a52a2a;
+}
+
+.weather-info {
+  background-color: #fff4f4;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px dashed #b22222;
+}
+
+.weather-info h3 {
+  margin-top: 0;
+  color: #d10000;
+}
+
+.weather-info p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.error {
+  margin-top: 10px;
+  color: #ff0000;
+  font-weight: bold;
+}
