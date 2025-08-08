@@ -1,29 +1,41 @@
-/* Weather.css */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #fcf8f3;
   color: #2a2a2a;
+  min-height: 100vh;
 }
 
 .weather-box {
-  max-width: 400px;
-  margin: 80px auto;
-  padding: 30px;
+  max-width: 90%;
+  width: 100%;
+  margin: 40px auto;
+  padding: 20px;
   border-radius: 16px;
   background: linear-gradient(145deg, #f8d1d1, #ffffff);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   text-align: center;
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+  .weather-box {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+  }
 }
 
 .weather-box h2 {
   margin-bottom: 20px;
   color: #b22222;
   letter-spacing: 1px;
+  font-size: clamp(1.5rem, 5vw, 2rem);
 }
 
 .weather-box input {
-  width: 80%;
+  width: calc(100% - 24px);
+  max-width: 320px;
   padding: 10px;
   border: 2px solid #b22222;
   border-radius: 10px;
@@ -31,6 +43,7 @@ body {
   outline: none;
   margin-bottom: 15px;
   background-color: #fff4f4;
+  box-sizing: border-box;
 }
 
 .weather-box button {
@@ -43,6 +56,8 @@ body {
   cursor: pointer;
   margin-bottom: 20px;
   transition: background-color 0.3s ease;
+  width: auto;
+  min-width: 120px;
 }
 
 .weather-box button:hover {
@@ -51,23 +66,32 @@ body {
 
 .weather-info {
   background-color: #fff4f4;
-  padding: 20px;
+  padding: 15px;
   border-radius: 12px;
   border: 1px dashed #b22222;
+  margin-top: 20px;
+}
+
+@media (min-width: 600px) {
+  .weather-info {
+    padding: 20px;
+  }
 }
 
 .weather-info h3 {
   margin-top: 0;
   color: #d10000;
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
 }
 
 .weather-info p {
   margin: 8px 0;
-  font-size: 16px;
+  font-size: clamp(0.9rem, 3vw, 1rem);
 }
 
 .error {
   margin-top: 10px;
   color: #ff0000;
   font-weight: bold;
+  font-size: clamp(0.9rem, 3vw, 1rem);
 }
